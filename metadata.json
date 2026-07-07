@@ -1,0 +1,6 @@
+{
+  "name": "EP Knowledge Land",
+  "description": "Tempat belajar sambil bermain interaktif yang dipandu oleh AI pintar Gemini. Menawarkan kuis dinamis, tebak kata, dan tantangan edukasi ramah anak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

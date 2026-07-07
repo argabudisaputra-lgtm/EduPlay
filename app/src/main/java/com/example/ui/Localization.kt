@@ -1,0 +1,142 @@
+package com.example.ui
+
+object Localization {
+    private val translations = mapOf(
+        "id" to mapOf(
+            "app_title" to "EP Knowledge Land",
+            "welcome" to "Selamat Datang,",
+            "settings_title" to "Pengaturan Profil & Bahasa 🎨",
+            "settings_subtitle" to "Ubah nama panggilan, usia, dan bahasa aplikasi sesuai keinginanmu!",
+            "name_label" to "Nama Panggilan",
+            "name_placeholder" to "Tulis nama belajarmu...",
+            "age_label" to "Usia (Tahun)",
+            "age_placeholder" to "Contoh: 7",
+            "level_auto_adjust" to "Kuis pilihan otomatis disesuaikan untuk level:",
+            "save_btn" to "Simpan ☑️",
+            "cancel_btn" to "Batal",
+            "lang_section_title" to "Pilih Bahasa Aplikasi 🌐",
+            "lang_id" to "Bahasa Indonesia 🇮🇩",
+            "lang_en" to "Bahasa Inggris 🇬🇧",
+            "pencapaian" to "Pencapaian",
+            "piala" to "Piala",
+            "reset_db" to "Reset Progress Petualangan",
+            "install_prompt" to "Ingin pasang aplikasi ini di HP? 📱",
+            "about_btn" to "Tentang",
+            "install_btn" to "Pasang di HP",
+            
+            // Dashboard sections
+            "daily_title" to "Misi Harian Spesial ⭐🔥",
+            "daily_desc" to "Raih bintang ekstra dengan menyelesaikan tantangan spesial hari ini!",
+            "play_now" to "Mulai Main 🚀",
+            "done_today" to "Selesai Hari Ini! ✨",
+            "choose_adventure" to "Ayo Pilih Petualanganmu! 🗺️",
+            
+            // Categories / Nav Cards
+            "edubot_title" to "Tanya EduBot 🤖🧸",
+            "edubot_desc" to "Obrolan penuh ilmu dengan robot asisten AI pintar! Tanyakan apa saja keinginan tahumu.",
+            "quiz_title" to "Arena Kuis AI 🏆🦄",
+            "quiz_desc" to "Main kuis 5 soal cerdas yang diracik khusus oleh kecerdasan buatan Gemini. Kumpulkan bintang!",
+            "math_title" to "Tantangan Matematika 🔢🦁",
+            "math_desc" to "Kuis matematika interaktif dari Kelas 1 SD hingga Kelas 12 SMA. Pilih Perkalian, Pembagian, Campuran, dan Soal Cerita!",
+            "english_title" to "Tantangan Bahasa Inggris 🇬🇧🐥",
+            "english_desc" to "Kuis bahasa Inggris seru dari Kelas 1 SD hingga Kelas 12 SMA. Pilih Kosa Kata, Tata Bahasa, Percakapan, atau Membaca!",
+            "islamic_title" to "Agama Islam & Al-Qur'an 🕌🕊️",
+            "islamic_desc" to "Kuis Agama Islam interaktif dari Kelas 1 SD hingga Kelas 12 SMA. Pelajari Aqidah/Akhlak, Fiqih/Ibadah, Al-Qur'an/Tajwid, dan Sejarah Islam!",
+            "math_land_title" to "Math Land 🏰✨",
+            "math_land_desc" to "Petualangan RPG Matematika! Jelajahi pulau misterius, hadapi Monster Golem & Naga Api, dan kumpulkan bintang mahkota!",
+            "puzzle_title" to "Tebak Kata Seru 🧩🐶",
+            "puzzle_desc" to "Acak dan susun huruf misterius berdasarkan petunjuk kreatif dari AI pencipta puzzle.",
+            "hangman_title" to "Detektif Kosakata AI 🤠🦊",
+            "hangman_desc" to "Ungkap kosakata rahasia huruf demi huruf dengan mengkaji petunjuk pintar asisten AI demi melatih ilmu bahasamu!",
+            
+            // Other UI Elements
+            "main_menu" to "Menu Utama",
+            "stats" to "Statistik Sobat Edu 📊",
+            "stars" to "Bintang",
+            "level" to "Level",
+            "xp" to "XP",
+            "history" to "Riwayat Kuis Terakhir 📜",
+            "no_history" to "Belum ada riwayat kuis, yuk main!",
+            "level_label" to "Level",
+            "level_1_3" to "PAUD & TK 🦄 (Umur 3-6)",
+            "level_4_6" to "SD Kelas Rendah 🎒 (Umur 7-9)",
+            "level_7_9" to "SD Kelas Tinggi 📚 (Umur 10-12)",
+            "level_10_plus" to "SMP & Remaja 🧠 (Umur 13+)",
+            "settings_profile_btn" to "Pengaturan",
+            "about_app" to "Tentang Aplikasi",
+            "change_name_title" to "Ubah Nama",
+            "about_title_modal" to "Tentang EP Knowledge Land",
+            "install_title_modal" to "Pasang Aplikasi EP Knowledge Land 📱"
+        ),
+        "en" to mapOf(
+            "app_title" to "EP Knowledge Land",
+            "welcome" to "Welcome,",
+            "settings_title" to "Profile & Language Settings 🎨",
+            "settings_subtitle" to "Change your nickname, age, and app language as you like!",
+            "name_label" to "Nickname",
+            "name_placeholder" to "Write your study name...",
+            "age_label" to "Age (Years)",
+            "age_placeholder" to "Example: 7",
+            "level_auto_adjust" to "Quizzes are automatically adjusted for level:",
+            "save_btn" to "Save ☑️",
+            "cancel_btn" to "Cancel",
+            "lang_section_title" to "Select App Language 🌐",
+            "lang_id" to "Indonesian 🇮🇩",
+            "lang_en" to "English 🇬🇧",
+            "pencapaian" to "Achievements",
+            "piala" to "Trophy",
+            "reset_db" to "Reset Adventure Progress",
+            "install_prompt" to "Want to install this app on your phone? 📱",
+            "about_btn" to "About",
+            "install_btn" to "Install on Phone",
+            
+            // Dashboard sections
+            "daily_title" to "Special Daily Quest ⭐🔥",
+            "daily_desc" to "Earn extra stars by completing today's special challenge!",
+            "play_now" to "Play Now 🚀",
+            "done_today" to "Done Today! ✨",
+            "choose_adventure" to "Choose Your Adventure! 🗺️",
+            
+            // Categories / Nav Cards
+            "edubot_title" to "Ask EduBot 🤖🧸",
+            "edubot_desc" to "Learn through smart conversations with our AI assistant! Ask and satisfy your curiosity.",
+            "quiz_title" to "AI Quiz Arena 🏆🦄",
+            "quiz_desc" to "Play a 5-question quiz tailor-made by Gemini AI. Collect stars!",
+            "math_title" to "Math Challenge 🔢🦁",
+            "math_desc" to "Interactive math quizzes from Grade 1 to 12. Choose Multiplication, Division, Mixed, and Word problems!",
+            "english_title" to "English Challenge 🇬🇧🐥",
+            "english_desc" to "Fun English quizzes from Grade 1 to 12. Choose Vocabulary, Grammar, Conversation, or Reading!",
+            "islamic_title" to "Islamic & Quran Quiz 🕌🕊️",
+            "islamic_desc" to "Interactive Islamic quiz from Grade 1 to 12. Learn Aqidah, Fiqh, Islamic History, and important Surahs!",
+            "math_land_title" to "Math Land 🏰✨",
+            "math_land_desc" to "Math RPG Adventure! Explore mysterious islands, battle Golem Monsters & Fire Dragons, and collect crown stars!",
+            "puzzle_title" to "Fun Word Scramble 🧩🐶",
+            "puzzle_desc" to "Unscramble mystery words based on creative hints generated by our puzzle-master AI.",
+            "hangman_title" to "AI Vocabulary Detective 🤠🦊",
+            "hangman_desc" to "Reveal secret words letter-by-letter with smart tips from our AI assistant to train your languages!",
+            
+            // Other UI Elements
+            "main_menu" to "Main Menu",
+            "stats" to "Sobat Edu Stats 📊",
+            "stars" to "Stars",
+            "level" to "Level",
+            "xp" to "XP",
+            "history" to "Recent Quiz History 📜",
+            "no_history" to "No history yet. Let's play first!",
+            "level_label" to "Level",
+            "level_1_3" to "Preschool & Kindergarten 🦄 (Age 3-6)",
+            "level_4_6" to "Lower Primary 🎒 (Age 7-9)",
+            "level_7_9" to "Upper Primary 📚 (Age 10-12)",
+            "level_10_plus" to "Secondary & Teenagers 🧠 (Age 13+)",
+            "settings_profile_btn" to "Settings",
+            "about_app" to "About App",
+            "change_name_title" to "Change Name",
+            "about_title_modal" to "About EP Knowledge Land",
+            "install_title_modal" to "Install EP Knowledge Land Application 📱"
+        )
+    )
+
+    fun get(lang: String, key: String): String {
+        return translations[lang]?.get(key) ?: translations["id"]?.get(key) ?: key
+    }
+}
